@@ -1,0 +1,398 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+/* ..............defult codes........... */
+body{
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+width:100%;
+}
+/* .relative{
+ position: relative;
+}
+.absolute{
+ position: absolute;
+} */
+a{
+text-decoration:none;
+}
+a:hover{
+ transition:all .3s;
+ color:#ff4a52;
+}
+/* ....................header start................. */
+.header{
+ width: 100%;
+ height: 88px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+}
+/* ...............logo in header............ */
+.header-logo{
+ margin-left: 50px;
+}
+/* ..............navigatin in header....... */
+.header-nav {
+ display:none;
+ justify-content:space-around;
+ list-style:none;
+}
+.header-nav-item{
+padding: 15px;
+}
+.header-nav-item-link{
+ font-size: 1.5vw;
+ color: black;
+}
+/* ..............boxes in header........ */
+.active{
+ display:block!important;
+}
+.unActive{
+ display: none!important;
+}
+.header-boxes{
+ display:flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content:center;
+ padding :30px 30px;
+}
+.header-menu-box{
+display: flex;
+padding: 5px 10px;
+border: none;
+}
+.header-serch-box {
+/* display: flex; */
+padding: 5px 10px;
+border:none;
+}
+.searchForm{
+ width: 200px;
+ position: relative;
+ margin-top: 20px;
+ margin-right: 10px;
+ display: none;
+}
+.searchForm input{
+color: black;
+}
+.searchForm button{
+ position: absolute;
+right: 10px;
+top: 18px;
+background-color: inherit;
+cursor: pointer;
+border: 0;
+}
+.searchBox {
+ position: relative;
+ outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border:1px solid #ccc;
+  padding: 5px;
+  width:100%;
+}
+.header-serch-box i{
+ color: black;
+}
+.header-serch-box i:hover{
+ cursor: pointer;
+}
+.header-menu-box i{
+ color: black;
+}
+.header-menu-box i:hover{
+ cursor: pointer;
+}
+
+/* .......................end header............... */
+/* .......................start main.............. */
+/* .............slider of the main......... */
+.main-slide{
+ height: 45vw;
+ background-size:cover;
+ background-image: url(../images/banner2.png);
+ display:flex;
+ justify-content:space-around;
+ align-items: center;
+ flex-direction:column;
+ background-repeat: no-repeat;
+}
+.main-slide h1{
+ font-size:8vw;
+ font-family: "Nothing You Could Do",
+ cursive;
+ color:#fff;
+ font-weight:400;
+}
+.main-slide p{
+ font-size: 2.5vw;
+ font-weight:400;
+ color:#fff;
+}
+.main-slide a{
+ transition: all .3s;
+ padding: 1vw 2vw;
+ background-color:#1EC6B6;
+ border-radius: 5px;
+ color: #fff;
+ font-size: 1.5vw;
+ font-weight: 400;
+}
+.main-slide a:hover{
+ background-color: #ff4a52;
+}
+/* ...............form of the main......... */
+.main-form{
+ flex-direction: column;
+ display: flex;
+ height: 270px;
+ justify-content: center;
+ align-items: center;
+ background-color: #040E27;
+}
+.form{
+ width:98%;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+}
+.form-label{
+font-size: 2vw;
+color:#fff;
+}
+input{
+ width:70%;
+ padding: 1.4vw;
+ margin: 10px 0;
+ border: 1px solid grey;
+ border-radius: 5px;
+ background-color:transparent;
+ outline: none;
+ color: azure;
+}
+.search-btn{
+width:14vw;
+padding: 1.4vw 2.5vw;
+background-color: #ff4a52;
+border: 1px solid gray;
+border-radius: 6px;
+color: azure;
+transition: all .3s;;
+}
+.search-btn:hover
+{
+ background-color:#1EC6B6;
+ cursor: pointer;
+}
+/* ...............popular of the main.............. */
+.papular{
+ display: flex;
+ flex-direction: column;
+}
+.papular-heading{
+ margin: 8vw 0;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+}
+.papular-title{
+ font-size:2.8vw;
+ font-weight:400;
+ color:#040E27;
+ padding:10px;
+}
+.papular-text{
+ font-size:1.4vw;
+ font-weight: 400;
+ color: #7a838b;
+ line-height: 30px;
+}
+
+.papular-container{
+ width: 95%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+ margin-left: 25px
+}
+.papular-container article{
+ cursor: pointer;
+ transition: all .4s;
+ position: relative;
+ padding:9px 0;
+}
+.papular-container article:hover{
+ transform:translateY(-10px);
+
+}
+.papular-container article::before{
+ background: linear-gradient(to bottom, rgba(4,14,39,0)0%, rgba(4,14,39,0.7)100%);
+ content: " ";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 97%;
+ z-index: 100;
+ border-radius: 5px;
+}
+.papular-container-info{
+ position: absolute;
+ left:30px;
+ bottom: 30px;
+ font-size: 2vw;
+ color:white;
+ z-index: 100;
+}
+.papular-container-info a{
+ font-weight: 100;
+ font-size:1vw;
+ padding: 5;
+ margin-left:8px;
+ border-radius: 10px;
+ background-color: #1EC6B6;
+ color: #ffffff;
+}
+.papular-container-info:hover{
+ color: #ff4a52;
+}
+.papular-container article:hover .papular-container-info span{
+ color:#ff4a52;
+ transition: all .3s;
+}
+.papular-container article:hover .papular-container-info a{
+ background-color: #ff4a52;
+ transition: all .3s;
+}
+/* ..................subscribe of the main...................... */
+.subscribe-bar{
+ width:100%;
+ height: 240px;
+display: flex;
+position: relative;
+flex-direction: column;
+background-position: 65% 65%;
+align-items: center;
+justify-content: center;
+background-image: url(../images/newsletter.png);
+background-size: cover;
+margin: 20px 0;
+z-index: 10000;
+}
+.subscribe-bar::before {
+ background-color: #040E27;
+ content: " ";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ opacity: .6;
+}
+.subscribe-bar-title{
+ display: flex;
+ width:100%;
+ flex-direction:column;
+ align-items: center;
+ z-index: 100;
+}
+.subscribe-bar-form{
+ display: flex;
+ width:100%;
+ flex-direction:column;
+ align-items: center;
+}
+.subscribe-bar-title h4{
+ font-size:25px;
+ font-weight:600;
+ color:white;
+ margin: 10px 0;
+}
+.subscribe-bar-title p{
+ font-size:13px;
+ font-weight:400;
+ color:gray;
+ margin: 5px 0;
+}
+.subscribe-bar-form input{
+z-index:10000;
+background-color: azure;
+width: 200px;
+height: 50px;
+color: black;
+}
+.subscribe-bar-form-btn{
+z-index:10000;
+background-color:#ff4a52;
+color: #fff;
+border: none;
+border-radius: 5px;
+width: 200px;
+height: 50px;
+cursor: pointer;
+}
+
+.video-bar{
+width: 100%;
+height: 40vw;
+background-image: url(../images/video.png);
+background-size: cover;
+background-position: 10% 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:space-evenly;
+margin:10px 0;
+position: relative;
+}
+.video-bar::before {
+ background-color: #040E27;
+ content: " ";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ opacity: .4;
+}
+.video-title
+{
+font-size: 6vw;
+font-weight: 400;
+font-family: "Nothing You Could Do",
+cursive;
+color: #fff;
+margin-top: 40px;
+z-index: 100;
+}
+.video-btn{
+ color:white;
+ padding: 3.5vw;
+ transition: all .5s!important;
+ cursor: pointer;
+ background-color:#1EC6B6;
+ border-radius: 100%;
+ border: none;
+ margin-bottom: 30px;
+ z-index: 100;
+}
+.video-btn:hover{
+ background-color:#ff4a52;
+}
+.footer{
+ width: 100%;
+ height:250px;
+ background-color:#040E27;
+ margin-top: 20px;
+}
